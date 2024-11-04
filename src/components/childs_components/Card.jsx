@@ -28,7 +28,7 @@ const Card = ({ image, title, description, footerImage, footerText }) => {
       {/* Back side of the card */}
       <div className="card-side card-back">
         <button className="btn" onClick={handleReadMore}>
-          ReadMore
+          Read More
         </button>
       </div>
     </div>
