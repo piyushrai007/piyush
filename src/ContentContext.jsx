@@ -95,6 +95,8 @@ export const ContentProvider = ({ children }) => {
       description:
         "Successfully completed IBM course on Machine Learning, Data Analysis, Python.",
       footerImage: piyush,
+      footerText: "2 weeks",
+      category: "Certificates",
     },
     {
       image: java,
@@ -102,6 +104,7 @@ export const ContentProvider = ({ children }) => {
       description: "Completed LearnQuest Java course from Coursera.",
       footerImage: piyush,
       footerText: "2 weeks",
+      category: "Certificates",
     },
     {
       image: python,
@@ -109,6 +112,7 @@ export const ContentProvider = ({ children }) => {
       description: "Completed basic tasks on Python from Hackerrank.",
       footerImage: piyush,
       footerText: "60 min",
+      category: "Certificates",
     },
     {
       image: hackhound,
@@ -116,6 +120,7 @@ export const ContentProvider = ({ children }) => {
       description: "Won the hackathon organized by Hackhound.",
       footerImage: piyush,
       footerText: "60 min",
+      category: "Hackathon",
     },
   ];
   const projectsdata = [
@@ -180,3 +185,4 @@ export const ContentProvider = ({ children }) => {
 };
 
 export const useContent = () => useContext(ContentContext);
+export default ContentContext;

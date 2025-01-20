@@ -5,7 +5,6 @@ const Card = ({ image, title, description, footerImage, footerText }) => {
   const navigate = useNavigate();
 
   const handleReadMore = () => {
-    // Navigate to the route with the title as the path parameter
     navigate(`/achievements/${encodeURIComponent(title)}`);
   };
 
