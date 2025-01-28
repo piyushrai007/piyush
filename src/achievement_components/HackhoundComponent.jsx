@@ -41,7 +41,7 @@ const HackhoundComponent = () => {
           </p>
           <div className="flex space-x-4">
             <a
-              href="https://github.com/your-repo-link"
+              href="https://github.com/piyushrai007/edunova"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-black text-yellow-400 px-6 py-3 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300"
