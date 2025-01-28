@@ -16,6 +16,12 @@ import {
   piyush
 } from "./assets/index.js";
 
+
+import IbmCourseComponent from './achievement_components/IbmCourseComponent.jsx';
+import JavaCourseComponent from './achievement_components/JavaCourseComponent.jsx';
+import PythonHackerrankComponent from './achievement_components/PythonHackerrankComponent.jsx';
+import HackhoundComponent from './achievement_components/HackhoundComponent.jsx';
+
 const ContentContext = createContext();
 
 export const ContentProvider = ({ children }) => {
@@ -97,6 +103,7 @@ export const ContentProvider = ({ children }) => {
       footerImage: piyush,
       footerText: "2 weeks",
       category: "Certificates",
+      component: IbmCourseComponent,
     },
     {
       image: java,
@@ -105,6 +112,7 @@ export const ContentProvider = ({ children }) => {
       footerImage: piyush,
       footerText: "2 weeks",
       category: "Certificates",
+      component: JavaCourseComponent,
     },
     {
       image: python,
@@ -113,6 +121,7 @@ export const ContentProvider = ({ children }) => {
       footerImage: piyush,
       footerText: "60 min",
       category: "Certificates",
+      component: PythonHackerrankComponent,
     },
     {
       image: hackhound,
@@ -121,6 +130,7 @@ export const ContentProvider = ({ children }) => {
       footerImage: piyush,
       footerText: "60 min",
       category: "Hackathon",
+      component: HackhoundComponent,
     },
   ];
   const projectsdata = [

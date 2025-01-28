@@ -38,6 +38,7 @@ const Achievements = () => {
             description={achievement.description}
             footerImage={achievement.footerImage}
             footerText={achievement.footerText}
+            Component={achievement.component}
           />
         ))}
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import heroImage from '../assets/images/Design 1.gif'; // Adjust the path as needed
-import resume from '../assets/most updated resume - Google Docs.pdf'; // Adjust the path as needed
+import resume from '../assets/piyushraiResume.pdf'; // Adjust the path as needed
 // import './Hero.css'; // Ensure you have the corresponding CSS file for styling
 
 const Hero = () => {
