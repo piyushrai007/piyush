@@ -38,11 +38,11 @@ function App() {
                   buttonText={aboutContent.buttonText}
                   buttonLink={aboutContent.buttonLink}
                 />
-                <Services />
                 <Projects />
+                <Achievements />
+                <Services />
                 <ConnectSection />
                 <Skillntime />
-                <Achievements />
               </>
             }
           />
