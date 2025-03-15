@@ -13,7 +13,12 @@ import {
   web,
   garage,
   github,
-  piyush
+  piyush,
+  Machine_learning,
+  dp,
+  visualization,
+  sql,
+  data_science
 } from "./assets/index.js";
 
 
@@ -97,9 +102,55 @@ export const ContentProvider = ({ children }) => {
   const achievementsData = [
     {
       image: course1,
-      title: "IBM Course",
-      description:
-        "Successfully completed IBM course on Machine Learning, Data Analysis, Python.",
+      title: "Data Analaysis",
+      description:"Successfully completed IBM course on Machine Learning, Data Analysis, Python.",
+      footerImage: piyush,
+      footerText: "2 weeks",
+      category: "Certificates",
+      component: IbmCourseComponent,
+    },
+    {
+      image: Machine_learning,
+      title: "Machine Learning",  
+      description: "Completed Machine Learning course from Coursera.",
+      footerImage: piyush,  
+      footerText: "2 weeks",
+      category: "Certificates",
+      component: IbmCourseComponent,
+
+
+    },
+    {
+      image: dp,
+      title: "Dynamic Programming",
+      description: "Completed Dynamic Programming course from Coursera.",
+      footerImage: piyush,
+      footerText: "2 weeks",
+      category: "Certificates",
+      component: IbmCourseComponent,
+    },
+    {
+      image: visualization,
+      title: "Data Visualization",
+      description: "Completed Data Visualization course from Coursera.",
+      footerImage: piyush,
+      footerText: "2 weeks",
+      category: "Certificates",
+      component: IbmCourseComponent,
+    },
+    {
+      image: sql,
+      title: "SQL",
+      description: "Completed SQL course from Coursera.",
+      footerImage: piyush,
+      footerText: "2 weeks",
+      category: "Certificates",
+      component: IbmCourseComponent,
+    },
+    {
+      image: data_science,
+      title: "Data Science",
+      description: "Completed Data Science course from Coursera.",
       footerImage: piyush,
       footerText: "2 weeks",
       category: "Certificates",

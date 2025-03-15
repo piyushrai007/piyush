@@ -18,7 +18,11 @@ import garage from './images/garage.png';
 import github from './images/github.png';
 import piyush from './images/piyush_one.jpeg';
 import unammed from './images/unnamed (4).png';
-
+import Machine_learning from './images/Machine_learning.png';
+import dp from './images/dp.png';
+import visualization from './images/visualization.png';
+import sql from './images/sql.png';
+import data_science from './images/data_science.png';
 export  {
     logo ,
     aboutImage,
@@ -38,6 +42,11 @@ export  {
     garage,
     github,
     piyush,
-    unammed
+    unammed,
+    Machine_learning,
+    dp,
+    visualization,
+    sql,
+    data_science
     
 };   

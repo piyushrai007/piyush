@@ -25,7 +25,7 @@ const Hero = () => {
               <a
                 target="_blank"
                 href=""
-                className="social-icon"
+                className="social-icon"dd
               >
                 <i className="fab fa-twitter"></i>
               </a>
