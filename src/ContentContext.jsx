@@ -26,7 +26,7 @@ import IbmCourseComponent from './achievement_components/IbmCourseComponent.jsx'
 import JavaCourseComponent from './achievement_components/JavaCourseComponent.jsx';
 import PythonHackerrankComponent from './achievement_components/PythonHackerrankComponent.jsx';
 import HackhoundComponent from './achievement_components/HackhoundComponent.jsx';
-
+import DataAnalysis  from "./achievement_components/DataAnalaysis.jsx";
 const ContentContext = createContext();
 
 export const ContentProvider = ({ children }) => {
@@ -107,7 +107,7 @@ export const ContentProvider = ({ children }) => {
       footerImage: piyush,
       footerText: "2 weeks",
       category: "Certificates",
-      component: IbmCourseComponent,
+      component: DataAnalysis,
     },
     {
       image: Machine_learning,

@@ -67,7 +67,7 @@ function App() {
             </div>
             } />
         <Route path="/achievements/:title" element={<AchivementsPage />} />
-
+        
         </Routes>
         <Footer />
       </div>
