@@ -1,20 +1,24 @@
-import React, { useContext } from 'react';
-import { useParams } from 'react-router-dom';
-import ContentContext from '../ContentContext';
+import React, { useContext } from "react";
+import { Link, useParams } from "react-router-dom";
+import ContentContext from "../ContentContext";
 
 const AchievementPage = () => {
   const { title } = useParams();
   const { achievementsData } = useContext(ContentContext);
-  const achievement = achievementsData.find(a => a.title === title);
-
-  if (!achievement) {
-    return <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">Achievement not found</div>;
-  }
+  const achievement = achievementsData.find((a) => a.title === title);
 
   return (
-    <div>
-        {achievement.component && <achievement.component />}
-
+    <div className="pt-16">
+      <div className="container-x py-6">
+        <Link to="/#achievements" className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-accent">
+          <i className="fas fa-arrow-left text-xs" /> Back to achievements
+        </Link>
+      </div>
+      {achievement ? (
+        achievement.component && <achievement.component />
+      ) : (
+        <p className="container-x py-24 text-slate-400">Achievement not found.</p>
+      )}
     </div>
   );
 };
