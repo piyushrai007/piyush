@@ -1,4 +1,5 @@
 import profile from "../assets/work/profile.webp";
+import heroAnimated from "../assets/work/hero-animated.webp";
 import edunova from "../assets/work/edunova.webp";
 import edunovaFlow from "../assets/work/edunova-flow.webp";
 import weirdos from "../assets/work/weirdos.webp";
@@ -22,6 +23,7 @@ export const profileData = {
   role: "Full Stack Developer",
   focus: "AI & Data Science",
   photo: profile,
+  heroAnimation: heroAnimated,
   location: "Vidisha, Madhya Pradesh, India",
   email: "Piyushraivds45@gmail.com",
   phone: "+91-9691529465",

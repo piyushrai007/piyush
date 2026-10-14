@@ -89,14 +89,14 @@ const Hero = () => (
       </div>
 
       <motion.div
-        initial={{ opacity: 0, scale: 0.94 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.9, delay: 0.1, ease }}
-        className="relative mx-auto w-full max-w-[340px]"
+        initial={{ opacity: 0, x: 800, rotate: 540 }}
+        animate={{ opacity: 1, x: 0, rotate: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="relative mx-auto w-full max-w-[300px]"
       >
         <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-accent/40 via-accent/5 to-transparent blur-sm" aria-hidden="true" />
         <div className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-ink-800">
-          <img src={profileData.photo} alt="Portrait of Piyush Rai" className="aspect-square w-full object-cover" />
+          <img src={profileData.heroAnimation} alt="Portrait of Piyush Rai" className="aspect-[9/16] w-full object-cover" />
         </div>
         <div className="card absolute -bottom-5 -left-4 flex items-center gap-3 px-4 py-3 shadow-2xl shadow-black/40 sm:-left-8">
           <span className="grid h-9 w-9 place-items-center rounded-lg bg-accent/15 text-accent">
