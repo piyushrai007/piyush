@@ -21,6 +21,18 @@ const Experience = () => (
                 <div>
                   <h3 className="font-display text-xl font-semibold text-white md:text-2xl">{job.role}</h3>
                   <p className="mt-1 text-accent">{job.company}</p>
+                  {job.product && (
+                    <a
+                      href={job.product.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-3 inline-flex items-center gap-2 rounded-full border border-emerald-400/25 bg-emerald-400/[0.07] px-3 py-1 text-xs font-medium text-emerald-300 hover:border-emerald-400/50"
+                    >
+                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                      Live: {job.product.name} · {job.product.href.replace("https://", "")}
+                      <i className="fas fa-external-link-alt text-[10px]" />
+                    </a>
+                  )}
                 </div>
                 <div className="text-right">
                   <p className="font-mono text-sm text-slate-300">{job.period}</p>

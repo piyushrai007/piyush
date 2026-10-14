@@ -33,7 +33,7 @@ const ProjectDetail = () => {
             <p className="eyebrow">{p.category} · {p.year}</p>
             {p.badge && (
               <span className="inline-flex items-center gap-1.5 rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
-                <i className="fas fa-trophy text-[10px]" /> {p.badge}
+                <i className={`${p.badgeIcon || "fas fa-trophy"} text-[10px]`} /> {p.badge}
               </span>
             )}
           </div>

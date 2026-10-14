@@ -44,7 +44,7 @@ export const profileData = {
 
 export const stats = [
   { value: "1+", label: "Year building production EdTech" },
-  { value: "7+", label: "Shipped projects" },
+  { value: "8+", label: "Shipped projects" },
   { value: "5th", label: "HackHound 2.0 — 50+ teams" },
   { value: "5", label: "IBM & MongoDB certifications" },
 ];
@@ -55,6 +55,7 @@ export const experience = [
     company: "Code and Learn Edutech Private Limited",
     period: "Sep 2025 — Present",
     type: "Full-time",
+    product: { name: "Tutor AI", href: "https://app.tutor-ai.org" },
     points: [
       "Developed the school_access Django application to support a multi-school architecture; wrote complex queries and managed schemas in MS SQL Server using SSMS.",
       "Engineered the “Master Academic Plan” logic to automate schedule distribution across schools.",
@@ -79,6 +80,48 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    slug: "tutor-ai",
+    title: "Tutor AI",
+    subtitle: "Multi-school EdTech platform · Code and Learn Edutech",
+    badge: "Live in production",
+    badgeIcon: "fas fa-circle",
+    category: "Full Stack · Production",
+    featured: true,
+    year: "2025 — Present",
+    cover: { label: "app.tutor-ai.org", icon: "fas fa-graduation-cap" },
+    summary:
+      "The production platform I work on at Code and Learn Edutech: curriculum, assignments and academic planning for many schools on one system, with an AI corrector that renders subject diagrams.",
+    links: {
+      live: "https://app.tutor-ai.org",
+    },
+    stack: ["Django", "React", "TypeScript", "MS SQL Server", "Celery", "IIS", "LaTeX", "RDKit", "Matplotlib", "Asymptote", "Ghostscript"],
+    meta: [
+      { label: "Company", value: "Code and Learn Edutech Pvt. Ltd." },
+      { label: "Role", value: "Full Stack Developer" },
+      { label: "Since", value: "Sep 2025" },
+      { label: "Deployment", value: "Production on IIS" },
+    ],
+    problem:
+      "Schools on the platform each need their own curriculum, schedules and assignments, but the product has to run as one system — with data kept separate per school and academic plans that don't have to be set up by hand for every school.",
+    solution:
+      "A multi-school architecture in Django and MS SQL Server, a React + TypeScript frontend that loads curriculum and assignment data dynamically, and an AI corrector backed by Celery pipelines that compile subject diagrams for answers and content.",
+    features: [
+      { title: "Multi-school access", text: "The school_access Django app scopes data and permissions per school on a shared MS SQL Server database." },
+      { title: "Master Academic Plan", text: "Logic that automates schedule distribution across schools instead of configuring each one by hand." },
+      { title: "Dynamic curriculum & assignments", text: "API calls centralised in bridgeService.ts so Curriculum and Assignment pages load their data dynamically." },
+      { title: "AI corrector diagrams", text: "sc_ai_corrector compiles subject diagrams with LaTeX, RDKit (chemistry), Matplotlib, Asymptote and Ghostscript." },
+      { title: "Stable rendering pipelines", text: "Celery workers run multi-stage rendering; concurrency bottlenecks resolved to stabilise the backend." },
+      { title: "Admin Dashboard", text: "Endpoints that sync real-time data between the school database and the admin UI." },
+    ],
+    contributions: [
+      "Built the school_access Django application and wrote complex queries and schema changes in SSMS.",
+      "Engineered the Master Academic Plan scheduling logic.",
+      "Refactored the React/TypeScript frontend around a central bridgeService.ts API layer.",
+      "Extended sc_ai_corrector's diagram compilation and fixed Celery concurrency issues.",
+      "Deployed the application to production on IIS and maintain the Admin Dashboard.",
+    ],
+  },
   {
     slug: "edunova",
     title: "EduNova · Adaptify",

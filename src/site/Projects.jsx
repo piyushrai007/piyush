@@ -14,7 +14,7 @@ const FeaturedCard = ({ project, flip }) => (
         <div className="absolute inset-0 bg-gradient-to-t from-ink-950/60 to-transparent" />
         {project.badge && (
           <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-ink-950/80 px-3 py-1.5 text-xs font-semibold text-accent backdrop-blur">
-            <i className="fas fa-trophy text-[10px]" /> {project.badge}
+            <i className={`${project.badgeIcon || "fas fa-trophy"} text-[10px]`} /> {project.badge}
           </span>
         )}
       </Link>
@@ -76,7 +76,7 @@ const Projects = () => {
           index="03"
           eyebrow="Selected work"
           title="Projects with real problems behind them."
-          intro="Hackathon builds, a final-year AI platform and machine-learning projects — each with a full case study: the problem, the architecture and what I built."
+          intro="A production EdTech platform, hackathon builds, a final-year AI platform and machine-learning projects — each with a full case study: the problem, the architecture and what I built."
         />
         <div className="space-y-8">
           {featured.map((p, i) => (

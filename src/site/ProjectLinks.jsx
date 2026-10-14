@@ -2,7 +2,7 @@ import React from "react";
 
 const labels = {
   github: { text: "Source", icon: "fab fa-github" },
-  live: { text: "Live demo", icon: "fas fa-external-link-alt" },
+  live: { text: "Live site", icon: "fas fa-external-link-alt" },
   article: { text: "Article", icon: "fas fa-book-open" },
 };
 
